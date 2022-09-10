@@ -1,8 +1,7 @@
-package org.example;
+package org.example.shapes;
 
 public class Square extends Rectangle {
-
-    Square(double base) {
+    public Square(double base) {
         super(base, base);
     }
 
@@ -10,4 +9,5 @@ public class Square extends Rectangle {
     public String getName() {
         return "Square";
     }
+
 }

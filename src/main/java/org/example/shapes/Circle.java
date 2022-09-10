@@ -1,10 +1,12 @@
-package org.example;
+package org.example.shapes;
 
-public class Circle extends Shape {
+import org.example.blueprints.IShape;
 
-    private double _radius;
+public class Circle implements IShape {
 
-    Circle(double radius) {
+    private final double _radius;
+
+    public Circle(double radius) {
         _radius = radius;
     }
 
@@ -21,5 +23,10 @@ public class Circle extends Shape {
     @Override
     public String getName() {
         return "Circle";
+    }
+
+    @Override
+    public String toString() {
+        return shapeToString();
     }
 }
